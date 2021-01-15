@@ -52,7 +52,7 @@
         <table>
             <caption><i>Table with Info</i></caption>
             <colgroup>
-                <col span="3" style="background-color: white">
+                <col span="3">
             </colgroup>
           <tr>
             <th>Class</th>
@@ -139,7 +139,7 @@ Some popular GitHub commands are:</pre>
           Your browser does not support the video tag.
         </video>
         <p><b>Draw a canvas with graphics:</b></p>
-        <canvas id="myCanvas" width="300" height="300" style="border:3px dotted #000000;"></canvas>
+        <canvas id="myCanvas" width="300" height="300"></canvas>
         
         <p><b>Draw shapes:</b></p>
         <svg width="400" height="100">
@@ -254,19 +254,12 @@ Some popular GitHub commands are:</pre>
     </main>
     <footer>
         <p>Website was created by Eswar Ramineni for CSE 110 (Software Engineering) for Lab 2.</p>
-        <button onclick="showContent()">Click to Reveal the Professor for this Course</button>
+        <button>Click this cool button</button>
 
         <template>
           <p><i>Thomas Powell</i></p>
         </template>
-
-        <script>
-        function showContent() {
-            var grab = document.getElementsByTagName("template")[0];
-            var clon = grab.content.cloneNode(true);
-            document.body.appendChild(clon);
-        }
-        </script>
+        
     </footer>
 </body>
 
