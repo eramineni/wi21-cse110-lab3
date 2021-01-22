@@ -1,4 +1,12 @@
+header {
+    background-color: rgb(137, 204, 145);
+}
+nav {
+    background-color: #ff6347;
+}
 body {
-    background-color: beige;
-    
+    background-color: beige; /*This sets the background color of the body to beige */  
+}
+footer {
+    background-color: hsl(9, 100%, 64%);
 }
