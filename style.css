@@ -25,8 +25,16 @@ header {
     text-align: center;
 }
 body {
-    background-color: rgb(245, 245, 220); /*This sets the background color of the body to beige */  
+    background-color: bisque; /*This sets the background color of the body to beige */  
 }
+
+
+@media screen and (min-width: 800px) {
+  body {
+    background-color: rgb(245, 245, 220);
+  }
+}
+
 footer {
     background-color: hsl(9, 100%, 64%);
     margin: 10px 10px 10px 10px;
@@ -56,6 +64,10 @@ input + label{
 
 ul,li{
     list-style-type: square;
+}
+
+ol,li{
+    list-style: lower-roman;
 }
 
 th,b{
@@ -96,10 +108,27 @@ button:active {
     color:blue;
 }
 
+
 * {
     font-family: 'Open Sans', sans-serif;
 }
 @import url(//fonts.googleapis.com/css?family=Open+Sans);
+
+
+.flex-container {
+    display: flex;
+    flex-direction:column;
+    flex-wrap: nowrap;
+    justify-content: space-between;
+}
+
+.grid-container {
+    display: grid;
+    grid-gap: 30px;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    justify-items: center
+    
+}
 
 
 
